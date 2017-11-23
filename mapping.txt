@@ -1,0 +1,5 @@
+{"type": "A", "name": "dns.company.xy.", "value": "192.168.42.2:1223", "TTL": 71}
+{"type": "A", "name": "mailserver.company.xy.", "value": "127.0.0.1:234", "TTL": 46}
+{"type": "A", "name": "www.biu.ac.il", "value": "127.0.0.1:3322", "TTL": 28}
+{"type": "NS", "name": "biu.ac.il", "value": "127.0.0.1:2311", "TTL": 34}
+{"type": "A", "name": "com", "value": "127.0.0.1:9671", "TTL": 12}
