@@ -19,7 +19,7 @@ class Cache:
         del self.recordsDictionary[record_name]
 
     def get_record(self, record_name, record_type):
-        if self.is_exist(record_name,record_type):
+        if self.is_exist(record_name, record_type):
             return self.recordsDictionary[record_name]
         else:
             raise NameError("record not found")
