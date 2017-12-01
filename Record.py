@@ -1,6 +1,7 @@
 import json
 
 
+# record class  - represent a dns record.
 class Record:
     def __init__(self, name, record_type, value, ttl):
         self.TTL = ttl

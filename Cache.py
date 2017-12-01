@@ -8,9 +8,11 @@ class Cache:
         self.recordsTTL = {}
         self.stop = True
 
+    # add a record in to the cache - that cant be remove by ttl.
     def add_static_record(self, record):
         self.recordsDictionary[record.name] = record
 
+    # add a record in to the cache - that can remove by ttl.
     def add_dynamic_record(self, record):
         self.add_static_record(record)
         self.recordsTTL[record.name] = record.TTL
@@ -30,6 +32,7 @@ class Cache:
         else:
             return False
 
+    # start a timer in anther thread for running ttl removing.
     def start_timer(self, delay):
         self.stop = False
         # Create two threads as follows
@@ -39,6 +42,7 @@ class Cache:
     def ttl_timer(self, delay):
         while not self.stop:
             time.sleep(delay)
+            # run over the records and check if there are records to erase.
             for record_name in self.recordsTTL.keys():
                 self.recordsTTL[record_name] -= delay
                 if self.recordsTTL[record_name] <= 0:
