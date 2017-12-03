@@ -1,0 +1,1 @@
+{"type": "A", "name": "www.facebook.com", "value": "127.0.0.1:8121", "TTL": 10}

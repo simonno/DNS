@@ -1,2 +1,4 @@
 {"type": "NS", "name": "google.com", "value": "ns.google.com", "TTL": 20}
-{"type": "A", "name": "ns.google.com", "value": "127.0.0.1:6676", "TTL": 20}
+{"type": "A", "name": "ns.google.com", "value": "127.0.0.1:5555", "TTL": 20}
+{"type": "NS", "name": "facebook.com", "value": "ns.facebook.com", "TTL": 34}
+{"type": "A", "name": "ns.facebook.com", "value": "127.0.0.1:4578", "TTL": 34}
